@@ -7,17 +7,17 @@
 // Exercise data
 var exercises = {
 	"1-1": {
-		answer: "<p>The music video for Rihanna’s song <strong>American Oxygen</strong> depicts various moments from American history, including the inauguration of Barack Obama.</p>",
-		correctMd: "The music video for Rihanna’s song **American Oxygen** depicts various moments from American history, including the inauguration of Barack Obama."
+		answer: "<p>Amazônia cobre a maior parte da <strong>Bacia Amazônica</strong> da América do Sul e é uma floresta latifoliada úmida, esta bacia abrange 7 milhões de quilômetros quadrados.</p>",
+		correctMd: "Amazônia cobre a maior parte da **Bacia Amazônica** da América do Sul e é uma floresta latifoliada úmida, esta bacia abrange 7 milhões de quilômetros quadrados."
 	}, 
 	"1-2": {
 		answer: "<p>Why, sometimes I’ve believed as many as <em>six</em> impossible things before breakfast.</p>",
 		correctMd: "Why, sometimes I’ve believed as many as _six_ impossible things before breakfast."
 	},
-    "1-3": {
-        answer: "<p><strong>Everyone <em>must</em> attend the meeting at 5 o’clock today.</strong></p>",
-        correctMd: "**Everyone _must_ attend the meeting at 5 o’clock today.**"
-    }, 
+	"1-3": {
+		answer: "<p><strong>Everyone <em>must</em> attend the meeting at 5 o’clock today.</strong></p>",
+		correctMd: "**Everyone _must_ attend the meeting at 5 o’clock today.**"
+	}, 
 	"1-4": {
 		answer: "<p>I am totally awesome.*</p>\n<p>* for certain very small values of awesome</p>",
 		correctMd: "I am totally awesome.*\n\n\\* for certain very small values of awesome"
@@ -54,7 +54,7 @@ var exercises = {
 		answer: "<p>Four steps to better sleep:</p>\n<ol>\n<li>Stick to a sleep schedule</li>\n<li>Create a bedtime ritual</li>\n<li>Get comfortable</li>\n<li>Manage stress</li>\n</ol>",
 		correctMd: "Four steps to better sleep:\n1. Stick to a sleep schedule\n2. Create a bedtime ritual\n3. Get comfortable\n4. Manage stress"
 	},
-    "5-3": {
+	"5-3": {
 		answer: "<p>1986. What a great season. Arguably the finest season in the history of the franchise.</p>",
 		correctMd: "1986\\. What a great season. Arguably the finest season in the history of the franchise."
 	},     
