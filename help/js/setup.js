@@ -200,23 +200,23 @@ $(document).ready(function() {
     // vary the success alert text so it doesn't get boring
     function randomSuccessTitle() {
         var a = [
-            'Good Job!',
-            'Fantastic!',
-            'Well Done!',
-            'Excellent!',
-            'Perfect!',
-            'Super!', 
-            'Just Right!',
-            'You Did It!',
-            'Great Work!',
-            'Stellar!',
-            'Yes!',
-            'You Got It!',
-            'That’s Right!',
-            'That’s It!',
-            'Awesome!',
-            'Superb!',
-            'Outstanding!'
+		'Bom trabalho!',
+		'Fantástico!',
+		'Bem feito!',
+		'Excelente!',
+		'Perfeito!',
+		'Super!',
+		'Na medida!',
+		'Você fez isso!',
+		'Ótimo trabalho!',
+		'Estelar!',
+		'Sim!',
+		'Você entendeu!',
+		'Isso mesmo!',
+		'É isso!',
+		'Incrível!',
+		'Excelente!',
+		'Excepcional!'
         ]
         return a[Math.floor(Math.random() * a.length)];
     }	
