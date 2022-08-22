@@ -75,7 +75,7 @@ $(document).ready(function() {
 			</li> \
 		</ul> \
 	</div> \
-	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>';
+	<a class="cd-nav-trigger cd-img-replace">Abrir navegação<span></span></a>';
     
 	var menuFn = doT.template(template);
 	$(document.body).append(menuFn({section: CURRENT_SECTION}));
