@@ -27,7 +27,7 @@ function advanceBar(currentSlide) {
 function updateSlideNavigation(index) {
 	$('.current').removeClass('current');
 	$(".dotstyle li:eq(" + index + ")").addClass('current');
-    $(".cd-label").addClass("make-it-opaque");
+	$(".cd-label").addClass("make-it-opaque");
 }
 
 
@@ -41,7 +41,7 @@ $(document).ready(function() {
 	var CK_SHOW_HTML_ID_PREFIX = "ck_show_html_";
 	var RENDER_PAD_ID_PREFIX = "render_pad_";
 	var HTML_PAD_ID_PREFIX = "html_pad_";
-    var RESET_ID_PREFIX = "btn_reset_";
+	var RESET_ID_PREFIX = "btn_reset_";
     	
 	// swipe for mobile devices
 	$(".touch .slide").on("swipeleft", function() {
@@ -94,7 +94,7 @@ $(document).ready(function() {
 	});
     
 	var interestPointsSlide = $(".slide:eq(0)");
-    // to eliminate the flicker on iOS when tapping
+	// to eliminate the flicker on iOS when tapping
 	interestPointsSlide.css("-webkit-tap-highlight-color", "transparent"); 
 	interestPointsSlide.on('click', function(event) {
 		closeInterestPoint(event);
@@ -107,11 +107,11 @@ $(document).ready(function() {
         completeInterestPoints();
 	}
     
-    function completeInterestPoints() {
-        if ($('li.cd-single-point').length == $('li.cd-single-point.visited').length) {
-            $('.try-it button').addClass("button-urgent");
-        }
-    }
+    	function completeInterestPoints() {
+        	if ($('li.cd-single-point').length == $('li.cd-single-point.visited').length) {
+            		$('.try-it button').addClass("button-urgent");
+        	}
+    	}
 	
 	// Set up markdown editors
 	$('.editor').each(function() {
@@ -122,23 +122,23 @@ $(document).ready(function() {
 		// Set up event to update markdown/html when the user writes something
 		$(this).on('keyup', function(event) {        
                         			
-            var md = generateMd(exerciseId);
+    		var md = generateMd(exerciseId);
             
-			if(exercises[exerciseId] != undefined && $(this).data('win') != 1) {
-                                               
-                if (md.trim().toLowerCase() == exercises[exerciseId]["answer"].toLowerCase()) {
-					$(this).data('win', 1);
-					setTimeout(
-            			function () {							
-							$('').addClass('button-urgent');
-							swal({title: randomSuccessTitle(), type: "success", allowOutsideClick: "true", timer: "2000" });
-							markComplete(exerciseId);                    
-						}, 1000            
+		if(exercises[exerciseId] != undefined && $(this).data('win') != 1) {
+
+                	if (md.trim().toLowerCase() == exercises[exerciseId]["answer"].toLowerCase()) {
+				$(this).data('win', 1);
+				setTimeout(
+            				function () {							
+						$('').addClass('button-urgent');
+						swal({title: randomSuccessTitle(), type: "success", allowOutsideClick: "true", timer: "2000" });
+						markComplete(exerciseId);                    
+					}, 1000            
         			);
-                }
+                	}
                 
-			}
-		});
+		}
+	});
 		
 		// For the initial text
 		generateMd(exerciseId);
